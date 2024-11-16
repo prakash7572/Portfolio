@@ -1,7 +1,7 @@
 // apiService.js
 export const APIService = async (formData) => {
     try {
-      const res = await fetch("https://localhost:7019/api/Portfolio/ManageContact", {
+      const res = await fetch("https://prakashportfolio.bsite.net/api/Portfolio/ManageContact", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

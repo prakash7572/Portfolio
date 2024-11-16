@@ -11,7 +11,8 @@ const obj = {
   Email: '',
   Mobile :'',
   Message :'',
-  Location :'' 
+  Location :'',
+  IsEmailSend : false, 
 }
 const [loading, setLoading] = useState(false);
 const [formData, setFormData] = useState(obj);
