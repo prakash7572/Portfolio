@@ -77,7 +77,7 @@ const inputStyle = (field) => ({
   return (
     <>
     {loading && <Loader/>}
-    <div className="p-6 md:p-12 font-sans">
+    <div className="p-6 md:p-12 font-sans" >
       <div className="text-center mb-12">
         <h2 className="text-2xl font-bold" style={{ color: "rgba(var(--p1), 1)" }}>Contact</h2>
         <p className="text-accent mb-4">

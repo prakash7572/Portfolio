@@ -2,8 +2,19 @@ import React from "react";
 import "../assets/css/style.css";
 import "../assets/css/bootstrap.min.css";
 import user from "../assets/images/prakashImg.png";
+import resume from "../assets/prakash-resume.pdf";
 
 const Resume = () => {
+  const downloadResume = () => {
+    // Replace this URL with the actual path to your resume file
+    const resumeUrl = resume;
+    
+    // Create an anchor element to trigger the download
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'prakash_Resume.pdf'; // The name of the file the user will download
+    link.click();
+  };
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="max-w-5xl mx-auto p-11 sm:p-4">
@@ -12,7 +23,7 @@ const Resume = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
             Online Resume
           </h1>
-          <button className="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md inline-flex items-center text-sm md:text-base">
+          <button onClick={downloadResume}  className="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md inline-flex items-center text-sm md:text-base">
             <i className="fas fa-file-pdf mr-2"></i> Download PDF Version
           </button>
         </header>
