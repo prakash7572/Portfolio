@@ -55,25 +55,25 @@ function About() {
             <div className="banner-counter d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 gap-md-6 mt-10 mt-md-17">
               <div className="d-flex align-items-center gap-2 gap-xl-4">
                 <h2 className="display-two fw-semibold p1-color">
-                  <span className="counter">5</span>
+                  <span className="counter">2</span>
                 </h2>
                 <div className="line"></div>
                 <span className="n5-color">Years of Experience</span>
               </div>
               <div className="d-flex align-items-center gap-2 gap-xl-4">
                 <h2 className="display-two fw-semibold p1-color">
-                  <span className="counter">110</span>
+                  <span className="counter">15</span>
                 </h2>
                 <div className="line"></div>
                 <span className="n5-color">Projects Completed</span>
               </div>
-              <div className="d-flex align-items-center gap-2 gap-xl-4">
+              {/* <div className="d-flex align-items-center gap-2 gap-xl-4">
                 <h2 className="display-two fw-semibold p1-color d-flex gap-1">
                   <span className="counter">6</span>k
                 </h2>
                 <div className="line"></div>
                 <span className="n5-color">Clients Worldwide</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
